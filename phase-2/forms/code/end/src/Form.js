@@ -57,10 +57,14 @@ export default function Form() {
             <label><strong>Name </strong>
                 <input value={name} onChange={event => setName(event.target.value)} />
             </label>
-            {/* Uncomment for an implementation of "Name" with just one state: */}
+            {/* Uncomment for an implementation of "Name" with just one state (without the bonus validation): */}
             {/* To control an input, pass it a state getter (user) and setter (setUser) as props (value, onChange). */}
             {/* <label><strong>Name </strong>
                 <input value={name} onChange={event => setUser({ name: event.target.value, movie: movie })} />
+            </label> */}
+            {/* Uncomment for an implementation of name validation, where we reject the number 8! */}
+            {/* <label><strong>Name </strong>
+                <input value={name} onChange={event => setName(event.target.value.replace("8", ""))}/>
             </label> */}
             <br/><br/>
             {/* To control an input, pass it a state getter (movie) and setter (setMovie) as props (value, onChange). */}
